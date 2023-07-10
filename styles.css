@@ -1,0 +1,183 @@
+ @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+ 
+
+body {
+    font-family: 'Michroma', sans-serif;
+    background-color: #A6D0DD;
+    background-image: url(./personajes\ png/rob-smyth-woods.jpg);
+    background-position: center center;
+    height: 1800px;
+    background-attachment: fixed;
+    background-size: cover;
+    }
+    
+    #seleccionar-mascota {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .titulo {
+        color: white;
+        font-size: 36px;
+    }
+    
+    .subtitulo {
+        color: white;
+        font-size: medium;
+        font-family: 'Michroma', sans-serif;
+    
+    }
+    
+    .tarjetas {
+        display: flex;
+        gap: 10px;
+        color: white;
+        font-size: x-small;
+    }
+    
+    .tarjeta-de-mokepon {
+        width: 100px;
+        height: 60px;
+        background: rgba(255,255,255,0.06);
+        box-shadow: 0 8px 32px 0 rgba(31,38,135,.37);
+        padding: 4px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: flex-end;
+        align-items: center;
+        margin-inline: 10px;
+    }
+    
+    .tarjeta-de-mokepon img {
+      width: 80px;
+    }
+    
+    #boton-mascota {
+      width: 180px;
+      height: 40px;
+      border-radius: 20px;
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      margin-top: 30px;
+    }
+    
+    input {
+      display: none;
+    }
+    
+    input:checked + label {
+        background-color: rgb(170, 232, 211);
+    }
+    
+    #seleccionar-ataque {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .boton-de-ataque {
+        font-family: 'Michroma', sans-serif;
+        font-weight: bolder;
+        background-color: rgba(255,255,255,0.06);
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border-color: transparent;
+        width: 130px;
+        box-shadow: 0 10px 42px 0 rgba(31,38,135,.37);
+        color: white;
+    }
+    
+    #mensajes {
+      width: 280px;
+      background: transparent;
+      box-shadow: 0 10px 42px 0 rgba(31,38,135,.37);
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      color: white;
+    }
+    
+    #boton-reiniciar {
+        font-family: 'Michroma', sans-serif;
+        font-weight: bolder;
+        border: transparent;
+        border-radius: 10px;
+        box-shadow: 0 10px 42px 0 rgba(31,38,135,.37);
+    }
+    
+    .ataques {
+        display: grid;
+        grid-template-columns: 100px 100px;
+        text-align: center;
+        color: white;
+        gap: 100px;
+        align-items: end;
+        justify-content: start;
+        align-content: space-between;
+        justify-items: center;
+    }
+    
+    #vidas-jugador, #vidas-enemigo {
+        color: white;
+        font-weight: bolder;
+        font-size: -webkit-xxx-large;
+        margin: auto;
+    }
+    
+    #mascota-jugador,
+    #mascota-enemigo {
+        color: rgb(255, 105, 11);
+        font-weight: bolder;
+        font-size: larger;
+    }
+    
+    .ataques-jugador, .ataques-enemigo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .tarjetaVidas {
+        display: flex;
+    
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0 10px 42px 0 rgba(31,38,135,.37);
+        background-color: rgba(180, 255, 240, 0.316);
+        border-radius: 10px;
+        height: auto;
+        margin-top: 23px;
+        width: 139px;
+    
+    }
+    
+    @media (max-width: 360px) {
+        #capipepo-margin {
+            margin-block: 40px;
+        }
+        .tarjetas, .tarjetas-ataques {
+            flex-direction: column;
+        }
+        .tarjetaVidas {
+            width: 126px;
+        }
+        #mensajes {
+            width: 266px;
+        }
+    
+        .ataques {
+            grid-template-columns: 50px 50px;
+        }
+        
+    }
